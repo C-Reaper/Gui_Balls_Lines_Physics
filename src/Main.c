@@ -91,7 +91,7 @@ Rect Border;
 TransformedView tv;
 
 void Setup(AlxWindow* w){
-    RGA_Set(Time_Nano());
+    Random_Set(Time_Nano());
 
     tv = TransformedView_Make((Vec2){ GetWidth(),GetHeight() },(Vec2){ 0.0f,0.0f },(Vec2){ 1.0f,1.0f },(float)GetWidth() / (float)GetHeight());
     Border = Rect_New((Vec2){ 0.0f,0.0f },(Vec2){ 15.0f,15.0f });
